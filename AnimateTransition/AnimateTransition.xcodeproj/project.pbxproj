@@ -19,6 +19,7 @@
 		29B45F781E1CFF540060F55D /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B45F771E1CFF540060F55D /* Demo3ViewController.m */; };
 		29B45F7C1E1CFF840060F55D /* Demo1CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B45F7B1E1CFF840060F55D /* Demo1CollectionViewCell.m */; };
 		29B45F7F1E1CFFD20060F55D /* Transition1NavigationAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B45F7E1E1CFFD20060F55D /* Transition1NavigationAnimate.m */; };
+		29B45F861E1E1DD70060F55D /* Demo1DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B45F851E1E1DD70060F55D /* Demo1DetailViewController.m */; };
 		AC0311A840BAB7493F6F8FF7 /* libPods-AnimateTransition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B87AC296E5768B5B65C10CA1 /* libPods-AnimateTransition.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,9 @@
 		29B45F7B1E1CFF840060F55D /* Demo1CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1CollectionViewCell.m; sourceTree = "<group>"; };
 		29B45F7D1E1CFFD20060F55D /* Transition1NavigationAnimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transition1NavigationAnimate.h; sourceTree = "<group>"; };
 		29B45F7E1E1CFFD20060F55D /* Transition1NavigationAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transition1NavigationAnimate.m; sourceTree = "<group>"; };
+		29B45F831E1E13F80060F55D /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		29B45F841E1E1DD70060F55D /* Demo1DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1DetailViewController.h; sourceTree = "<group>"; };
+		29B45F851E1E1DD70060F55D /* Demo1DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1DetailViewController.m; sourceTree = "<group>"; };
 		863C22CBF6D506B45E1F49C6 /* Pods-AnimateTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimateTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimateTransition/Pods-AnimateTransition.release.xcconfig"; sourceTree = "<group>"; };
 		B87AC296E5768B5B65C10CA1 /* libPods-AnimateTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimateTransition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +91,7 @@
 				29B45F5A1E1CFE6B0060F55D /* AppDelegate.m */,
 				29B45F5C1E1CFE6B0060F55D /* ViewController.h */,
 				29B45F5D1E1CFE6B0060F55D /* ViewController.m */,
+				29B45F831E1E13F80060F55D /* Define.h */,
 				29B45F791E1CFF650060F55D /* Animate */,
 				29B45F6D1E1CFF300060F55D /* HomeViewController.h */,
 				29B45F6E1E1CFF300060F55D /* HomeViewController.m */,
@@ -94,6 +99,8 @@
 				29B45F711E1CFF3D0060F55D /* Demo1ViewController.m */,
 				29B45F7A1E1CFF840060F55D /* Demo1CollectionViewCell.h */,
 				29B45F7B1E1CFF840060F55D /* Demo1CollectionViewCell.m */,
+				29B45F841E1E1DD70060F55D /* Demo1DetailViewController.h */,
+				29B45F851E1E1DD70060F55D /* Demo1DetailViewController.m */,
 				29B45F731E1CFF480060F55D /* Demo2ViewController.h */,
 				29B45F741E1CFF480060F55D /* Demo2ViewController.m */,
 				29B45F761E1CFF540060F55D /* Demo3ViewController.h */,
@@ -268,6 +275,7 @@
 				29B45F7C1E1CFF840060F55D /* Demo1CollectionViewCell.m in Sources */,
 				29B45F5E1E1CFE6B0060F55D /* ViewController.m in Sources */,
 				29B45F5B1E1CFE6B0060F55D /* AppDelegate.m in Sources */,
+				29B45F861E1E1DD70060F55D /* Demo1DetailViewController.m in Sources */,
 				29B45F7F1E1CFFD20060F55D /* Transition1NavigationAnimate.m in Sources */,
 				29B45F721E1CFF3D0060F55D /* Demo1ViewController.m in Sources */,
 				29B45F581E1CFE6B0060F55D /* main.m in Sources */,

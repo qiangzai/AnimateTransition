@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface Demo2ViewController : UIViewController
-
+@property (nonatomic, strong) UIView *targetView;
 @end

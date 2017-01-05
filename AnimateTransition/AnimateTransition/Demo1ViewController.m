@@ -9,20 +9,35 @@
 #import "Demo1ViewController.h"
 #import <Masonry.h>
 #import "Demo1CollectionViewCell.h"
+#import "Define.h"
+#import "Demo1DetailViewController.h"
+#import "Transition1NavigationAnimate.h"
 
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-#define kScreenHight  [UIScreen mainScreen].bounds.size.height
-
-@interface Demo1ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface Demo1ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource, UINavigationControllerDelegate>
 @property (nonatomic, strong) UICollectionView *collectView;
+@property (nonatomic, strong) Transition1NavigationAnimate *pushAnimate;
 
 @end
 
 @implementation Demo1ViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.navigationController.delegate = self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.delegate = nil;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.pushAnimate = [[Transition1NavigationAnimate alloc] init];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -57,7 +72,20 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    Demo1CollectionViewCell *cell = (Demo1CollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    self.targetView = cell;
+    Demo1DetailViewController *detailVC = [[Demo1DetailViewController alloc] init];
+    [self.navigationController pushViewController:detailVC animated:YES];
     
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+    if (operation == UINavigationControllerOperationPush) {
+        return self.pushAnimate;
+//        return nil;
+    }else {
+        return nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
